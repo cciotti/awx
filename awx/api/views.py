@@ -589,7 +589,7 @@ class InstanceGroupList(ListCreateAPIView):
     new_in_320 = True
 
 
-class InstanceGroupDetail(InstanceGroupMembershipMixin, RetrieveDestroyAPIView):
+class InstanceGroupDetail(InstanceGroupMembershipMixin, RetrieveUpdateDestroyAPIView):
 
     view_name = _("Instance Group Detail")
     model = InstanceGroup
